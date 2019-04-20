@@ -1,0 +1,13 @@
+configure.bat -static -release -platform win32-g++ -prefix "E:\Qt\Qt5.11.0.Static" -qt-sqlite -qt-zlib -qt-pcre -qt-libpng -qt-libjpeg -qt-freetype -opengl desktop -openssl-linked -opensource -confirm-license -make libs OPENSSL_LIBS="-llibssl -llibcrypto -lgdi32" -L E:\Qt\openssl-1.0.1c -I E:\Qt\openssl-1.0.1c\include -nomake tools -nomake examples -nomake tests -skip qt3d -skip qtandroidextras -skip qtcanvas3d -skip qtcharts -skip qtconnectivity -skip qtdatavis3d -skip qtgamepad -skip qtlocation  -skip qtmacextras -skip qtmultimedia -skip qtnetworkauth -skip qtpurchasing -skip qtscript -skip qtsensors -skip qtserialbus -skip qtserialport -skip qtspeech -skip qttools -skip qtvirtualkeyboard -skip qtwayland -skip qtwebchannel -skip qtwebengine -skip qtwebglplugin -skip qtwebsockets -skip qtwebview -skip qtx11extras
+
+修改编译配置
+
+打开文件 C:\Qt\5.9.0_MinGW_static\mkspecs\win32-g++\qmake.conf
+
+找到 QMAKE_LFLAGS_DLL
+
+将后面都改成 -static
+
+再加一行 QMAKE_LFLAGS
+
+后面也改成 -static

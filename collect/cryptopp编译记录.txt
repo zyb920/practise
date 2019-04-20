@@ -1,0 +1,9 @@
+﻿https://www.cnblogs.com/findumars/p/6009249.html
+https://blog.csdn.net/upcmill/article/details/1697229
+https://www.cnblogs.com/AvalonRookie/articles/6937587.html
+
+
+pro文件:  LIBS += -lws2_32
+
+#log version>=6.0.0
+QMAKE_CXXFLAGS += -msse4 -maes -mpclmul -msha
